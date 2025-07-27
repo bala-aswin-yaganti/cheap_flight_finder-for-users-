@@ -30,17 +30,17 @@ Setup and Installation
 
 2. Create and activate a virtual environment (optional but recommended)
 
-source:
+    script:
 
-    python3 -m venv env
-    
-    source env/bin/activate         # macOS/Linux
-   
-    env\Scripts\activate            # Windows
+        python3 -m venv env
+        
+        source env/bin/activate         # macOS/Linux
+       
+        env\Scripts\activate            # Windows
 
 4. Install dependencies
 
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
 5. Create a .env file in the project root with the following variables:
 
