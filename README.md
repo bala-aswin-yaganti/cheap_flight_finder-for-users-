@@ -30,11 +30,13 @@ Setup and Installation
 
 2. Create and activate a virtual environment (optional but recommended)
 
+source:
+
     python3 -m venv env
+    
+    source env/bin/activate         # macOS/Linux
    
-    source env/bin/activate   # macOS/Linux
-   
-    env\Scripts\activate      # Windows
+    env\Scripts\activate            # Windows
 
 4. Install dependencies
 
@@ -42,15 +44,24 @@ Setup and Installation
 
 5. Create a .env file in the project root with the following variables:
 
-    SHEETY_ENDPOINT=<Your Sheety API endpoint URL>
-    AMADEUS_CLIENT_ID=<Your Amadeus SDK Client ID>
-    AMADEUS_CLIENT_SECRET=<Your Amadeus SDK Client Secret>
-    TWILIO_SID=<Your Twilio Account SID>
-    TWILIO_AUTH=<Your Twilio Auth Token>
-    TWILIO_PHONE=<Your Twilio phone number>
-    TARGET_PHONE=<Target phone number for SMS in E.164 format, e.g. +919876543210>
-    EMAIL=<Your email address used for sending emails>
-    EMAIL_PWD=<Password or app-specific password for the email>
+    # Sheety API endpoint URL for your Google Sheet
+SHEETY_ENDPOINT=https://api.sheety.co/your_project/your_sheet
+
+# Amadeus API credentials (Client ID and Client Secret)
+AMADEUS_CLIENT_ID=your_amadeus_client_id_here
+AMADEUS_CLIENT_SECRET=your_amadeus_client_secret_here
+
+# Twilio credentials for sending SMS
+TWILIO_SID=your_twilio_account_sid_here
+TWILIO_AUTH=your_twilio_auth_token_here
+TWILIO_PHONE=+1234567890  # Your Twilio phone number (in E.164 format)
+
+# Target phone number to receive SMS notifications (in E.164 format)
+TARGET_PHONE=+919876543210
+
+# Email credentials for sending email notifications
+EMAIL=your_email@example.com
+EMAIL_PWD=your_email_password_or_app_specific_password
 
 6. Ensure iata_codes.json includes city to IATA mappings (already provided).
 
