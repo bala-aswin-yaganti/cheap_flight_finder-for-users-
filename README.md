@@ -28,12 +28,19 @@ A Python application that monitors flight prices for specified routes and sends 
 ## Project Structure
 
     .
-    ├── main.py # Entry point to update data and trigger flight searches & notifications.
-    ├── data_manager.py # Handles Google Sheet data retrieval and IATA code updates.
-    ├── flight_search.py # Connects to Amadeus API to find cheapest flights.
-    ├── notification_manager.py # Sends SMS and email notifications.
-    ├── iata_codes.json # Stores city-to-IATA airport code mapping.
-    └── requirements.txt # Python dependencies.
+    ├── main.py 
+    ├── data_manager.py 
+    ├── flight_search.py 
+    ├── notification_manager.py 
+    ├── iata_codes.json
+    └── requirements.txt
+
+.main.py                 # Entry point to update data and trigger flight searches & notifications.
+.data_manager.py         # Handles Google Sheet data retrieval and IATA code updates.
+.flight_search.py        # Connects to Amadeus API to find cheapest flights.
+.notification_manager.py # Sends SMS and email notifications.
+.iata_codes.json         # Stores city-to-IATA airport code mapping.
+.requirements.txt        # Python dependencies.
     
 
 ## Setup and Installation
