@@ -31,14 +31,16 @@ Setup and Installation
 2. Create and activate a virtual environment (optional but recommended)
 
     python3 -m venv env
+   
     source env/bin/activate   # macOS/Linux
+   
     env\Scripts\activate      # Windows
 
-3. Install dependencies
+4. Install dependencies
 
     pip install -r requirements.txt
 
-4. Create a .env file in the project root with the following variables:
+5. Create a .env file in the project root with the following variables:
 
     SHEETY_ENDPOINT=<Your Sheety API endpoint URL>
     AMADEUS_CLIENT_ID=<Your Amadeus SDK Client ID>
@@ -50,7 +52,7 @@ Setup and Installation
     EMAIL=<Your email address used for sending emails>
     EMAIL_PWD=<Password or app-specific password for the email>
 
-5. Ensure iata_codes.json includes city to IATA mappings (already provided).
+6. Ensure iata_codes.json includes city to IATA mappings (already provided).
 
 Usage
 
