@@ -118,7 +118,11 @@ The program will:
 
 ## Google Sheet Setup
 
-The Google Sheet connected via Sheety should contain columns like:
+##First create a google form for the user to fill and link it to a google spreadsheet:
+the form looks like:<img width="2560" height="3420" alt="Flight Deal Tracker" src="https://github.com/user-attachments/assets/2c4662c8-df34-47e5-8845-d6718cfe8ea1" />
+
+later it looks in google sheet as:
+The Google Sheet connected via Sheety should contain columns like:(You should connect it to sheety API):
 
 | id | cityFrom | cityTo | iataFrom | iataTo | maxPrice | email             | phone       |
 |----|----------|--------|----------|--------|----------|-------------------|-------------|
